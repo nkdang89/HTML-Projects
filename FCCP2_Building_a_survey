@@ -1,0 +1,98 @@
+
+<style>
+
+
+  form {
+
+    display:grid;
+    grid-gap: 5px;
+    width:100px;
+    color: white;
+    background-color: black;
+    
+
+  }
+
+  .background1 {
+
+    background-color: black;
+  }
+
+  h1 {
+
+    background-color:black;
+    color:white;
+
+  }
+
+
+    
+    </style>
+    
+    <html class= "background1">
+      
+    
+    <main>
+      <div>
+    <h1 id= "title">What is your favorite TV show?</h1>
+
+    
+      <body>
+    <p id= "description"> There are many TV shows in all kinds of platforms: HBO,
+        Netflix, Hulu etc. Please answer the following questions.</p>
+
+       
+        <form id= "survey-form" action="/submit-TV-show">
+
+            <label for= "name" id= "name-label">1- Enter your name: </label>
+            <input id="name" type="text" name= "the name" placeholder="Name here" required><br>
+
+            <label for= "email" id= "email-label">2- Enter your email: </label>
+            <input id= "email" type= "email" name= "the email" placeholder= "Email here"required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"><br>
+
+            <label for= "age" id="number-label">3- Enter your age:</label>
+            <input id= "number" type= "number" name="the age" min= "6" max="120" placeholder= "Age Here"required><br>
+
+            <label for= "dropdown" id= "dropdown-label">Which is your favorite show?</label>
+            <select id="dropdown">
+              <option value= "1">Game of Thrones</option>
+              <option value= "2">Breaking Bad</option>
+              <option value= "3">Better Call Saul</option>
+              <option value= "4">Money Heist</option>
+              <option value= "5">Walking Dead</option>
+              <option value= "6">Dexter</option>
+            </select><br>
+
+            <label for="beginnig_radio" id=" ask_platform">What is your prefered show platform?</label>
+
+            <label for='platform'><input id="netflix" type= "radio" name="Different_Platforms" value= "Netflix">Netflix</label>
+            <label for='platform'><input id="hulu" type= "radio" name= "Different_Platforms" value= "Hulu">Hulu</label>
+
+              <label for='platform'><input id="HBO" type= "radio" name="Different_Platforms" value= "HBO">HBO</label>
+              <label for='platform'><input id="Amazon" type= "radio" name= "Different_Platforms" value= "Amazon">Amazon</label><br>
+
+              <label for="beginnig_checkbox" id=" ask_device">What kind of device you use to stream your shows?</label>
+              <label for="desktop"><input id="desktop" type="checkbox" name="device" value="Desktop"> Desktop</label>
+              <label for="tablet"><input id="tablet" type="checkbox" name="device" value="Tablet"> Tablet</label>
+              <label for="laptop"><input id="laptop" type="checkbox" name="device" value="Laptop"> Laptop</label>
+              <label for="cellphone"><input id="cellphone" type="checkbox" name="device" value="Cellphone"> Cellphone</label><br>
+
+    <textarea style= "height:30px;" rows="100" cols="250" placeholder= "Additional comments"></textarea><br>
+
+    <button id= "submit" type="submit">Submit</button>
+
+            
+
+    </form>
+
+  </div>
+
+    
+    </body>
+    
+    </main>
+    
+    
+    </html>
+    
